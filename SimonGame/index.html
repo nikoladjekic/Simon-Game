@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Simon Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
+	<link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<div class="container text-center">
+
+  <div class="simon-board">
+    <div class="row">
+      <div class="simon-button col-xs-6 col-lg-6" id="red"></div>
+      <div class="simon-button col-xs-6 col-lg-6" id="blue"></div>
+    </div>
+    <div class="row">
+      <div class="simon-button col-xs-6 col-lg-6" id="yellow"></div>
+      <div class="simon-button col-xs-6 col-lg-6" id="green"></div>
+    </div>
+    <div class="controller-board">
+      <h2 id="wrongMsg">Simon game</h2>
+      <input type="checkbox"> Strict mode
+      </br>
+      <button class="btn btn-info" id="start">Start</button>
+      <div>Count: <span id="count"></span></div>
+    </div>
+  </div>
+
+  </br>
+  <div id="winAlert">
+    <h1>Cogratulations!</h1>
+    <h2>You win!</h2>
+    <div id="alertBtn" class="btn btn-info">Play again</div>
+  </div>
+
+  <div id="welcomeBox">
+    <h2>Welcome to Simon says game!</h2>
+    <h4>Repeat 20 correct rounds to win the game.</h4>
+    <h3>Good Luck!</h3>
+    <div id="welcomeBtn" class="btn btn-info">Play</div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	
+</body>
+</html>
